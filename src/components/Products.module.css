@@ -1,0 +1,12 @@
+.container{
+    display: flex;
+    justify-content: space-around;
+    margin: 60px 0 80px;
+    flex-wrap: wrap;
+    min-height: 100vh;
+ 
+}
+.container h1{
+    font-size: 3rem;
+   color: rgba(190, 165, 165, 0.789);
+ }
