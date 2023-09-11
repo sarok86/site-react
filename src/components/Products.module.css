@@ -8,5 +8,7 @@
 }
 .container h1{
     font-size: 3rem;
-   color: rgba(190, 165, 165, 0.789);
- }
+   color: rgba(17, 16, 16, 0.789);
+   display:contents;
+   justify-content:center;
+}
