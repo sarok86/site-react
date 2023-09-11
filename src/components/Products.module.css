@@ -6,9 +6,9 @@
     min-height: 100vh;
  
 }
-.container h1{
+.loading{
     font-size: 3rem;
    color: rgba(17, 16, 16, 0.789);
-   display:contents;
-   justify-content:center;
+   display: contents;
+   flex-direction: column;
 }

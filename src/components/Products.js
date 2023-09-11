@@ -25,7 +25,7 @@ class Products extends Component {
                     products.length ? 
                     products.map(product =><Card key={product.id} image={product.image} name={product.title} cost={`${product.price} $`}/>)
                     :
-                     <h1>Loading ...</h1>
+                     <h1 className={styles.loading}>Loading ...</h1>
                 }; 
             </div>
         );

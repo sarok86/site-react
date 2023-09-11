@@ -10,9 +10,12 @@
     overflow: hidden;
     box-shadow: 10px 10px 15px rgb(189, 189, 189);
 }
-.container h3 {
-    color: #696969;
-    margin: 30px 20px 20px;
+.container h3{
+    margin: 20px 30px 20px 20px; 
+}
+.container h3 a{
+    text-decoration: none;
+    color: rgba(98, 76, 76, 0.756);
 }
 .container p {
     margin: 0 25px 20px;
