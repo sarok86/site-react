@@ -8,6 +8,7 @@ import AboutUs from "./components/AboutUs";
 import Footer from "./components/Footer"
 import DetailsPage from "./components/DetailsPage";
 import NotFound from "./components/NotFound";
+import Programmers from "./components/Programmers";
 
 class App extends Component {
     render() {
@@ -18,7 +19,10 @@ class App extends Component {
                     <Route path="/" element={<Landing />} />    
                     <Route path="/products/" element={<Products/>}/>
                     <Route path="/products/:id" element={<DetailsPage/>}/>
-                    <Route path="/products/us" element={<AboutUs />}/>
+                    <Route path="/aboutus/*" element={<AboutUs />}>
+                        <Route path="programmers" element={<Programmers/>}/>
+                        <Route path="drivers" element={<h1>Drivers</h1>}/>
+                    </Route>
                     <Route path="/notfound" element={<NotFound />}/>
                     <Route path="/*" element={<Navigate to="/notfound"/>}/>
                 </Routes>
