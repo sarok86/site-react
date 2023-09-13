@@ -1,13 +1,20 @@
-import React, { Component } from 'react';
+import React from 'react';
+import { useNavigate } from "react-router-dom";
 
-class AboutUs extends Component {
-    render() {
+const AboutUs = ()=>  {
+    const navigate = useNavigate();
+
+    const clickHandler =()=>{
+        navigate("/");
+        // navigate(-1);
+    }
+
         return (
             <div>
                 <h1>About Us</h1>
+                <button onClick={clickHandler}>GO Home</button>
             </div>
         );
-    }
 }
 
 export default AboutUs;
